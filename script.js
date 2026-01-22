@@ -37,7 +37,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
 // TYPING ANIMATION FOR HERO
 // ============================================
 const heroTitle = document.querySelector('.hero-title');
-const roles = ['Cyber Security Student', 'Web Developer', 'Problem Solver', 'Security Enthusiast'];
+const roles = ['Cyber Security Student', 'App Developer', 'Problem Solver', 'Security Enthusiast'];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

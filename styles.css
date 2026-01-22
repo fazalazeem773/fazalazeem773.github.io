@@ -10,11 +10,13 @@
     --primary-dark: #4f46e5;
     --primary-light: #818cf8;
     --accent: #06b6d4;
+    --accent-pink: #ec4899;
+    --accent-orange: #f97316;
     --text: #0f172a;
     --text-muted: #475569;
     --text-light: #94a3b8;
     --bg: #ffffff;
-    --bg-alt: #f8fafc;
+    --bg-alt: #f0f9ff;
     --bg-card: #ffffff;
     --border: #e2e8f0;
     --radius: 12px;
@@ -22,8 +24,10 @@
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 8px 30px rgba(99, 102, 241, 0.15);
-    --hero-gradient: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f0fdfa 100%);
-    --particle-opacity: 0.3;
+    --hero-gradient: linear-gradient(135deg, #fdf4ff 0%, #eef2ff 35%, #ecfeff 65%, #f0fdf4 100%);
+    --experience-bg: linear-gradient(135deg, #fef3c7 0%, #fce7f3 100%);
+    --skills-bg: linear-gradient(135deg, #dbeafe 0%, #ede9fe 100%);
+    --particle-opacity: 0.4;
 }
 
 /* Dark Mode */
@@ -38,6 +42,8 @@
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 8px 30px rgba(99, 102, 241, 0.25);
     --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    --experience-bg: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    --skills-bg: linear-gradient(135deg, #164e63 0%, #1e3a5f 100%);
     --particle-opacity: 0.5;
 }
 
@@ -402,7 +408,7 @@ section {
 
 /* Experience Cards */
 .experience {
-    background: var(--bg-alt);
+    background: var(--experience-bg);
 }
 
 .experience-list {
@@ -510,6 +516,10 @@ section {
 
 /* Projects */
 .projects {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+}
+
+[data-theme="dark"] .projects {
     background: var(--bg);
 }
 
@@ -642,7 +652,7 @@ section {
 
 /* Skills */
 .skills {
-    background: var(--bg-alt);
+    background: var(--skills-bg);
 }
 
 .skills-categories {
