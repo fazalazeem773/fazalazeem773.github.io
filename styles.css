@@ -1091,6 +1091,14 @@ section {
     background: var(--bg-alt);
 }
 
+[data-theme="dark"] .skill-category {
+    color: var(--text);
+}
+
+[data-theme="dark"] .skill-cat-name {
+    color: var(--text);
+}
+
 /* Responsive */
 @media (max-width: 640px) {
     .nav-container {
