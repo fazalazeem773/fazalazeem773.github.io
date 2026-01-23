@@ -22,7 +22,7 @@
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 8px 30px rgba(99, 102, 241, 0.15);
-    --page-bg: linear-gradient(135deg, #faf5ff 0%, #eef2ff 50%, #ecfeff 100%);
+    --page-bg: linear-gradient(135deg, #f5f0ff 0%, #ede9fe 40%, #e0e7ff 70%, #eef2ff 100%);
     --particle-opacity: 0.4;
 }
 
@@ -49,8 +49,18 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text);
+    background-color: #f5f0ff;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: var(--page-bg);
-    background-attachment: fixed;
+    z-index: -1;
 }
 
 .container {
@@ -1066,6 +1076,10 @@ section {
 
 [data-theme="dark"] .hero-link {
     background: var(--bg-alt);
+}
+
+[data-theme="dark"] body {
+    background-color: #0f172a;
 }
 
 [data-theme="dark"] .skill-category {
