@@ -214,27 +214,7 @@ html[data-theme] section {
     overflow: hidden;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-}
 
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-}
 
 .hero-content {
     max-width: 450px;
@@ -1075,13 +1055,6 @@ section {
     border-bottom-color: rgba(51, 65, 85, 0.8);
 }
 
-[data-theme="dark"] .hero::before {
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-}
-
-[data-theme="dark"] .hero::after {
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
-}
 
 [data-theme="dark"] .cursor-glow {
     background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
