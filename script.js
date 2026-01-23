@@ -303,19 +303,19 @@ document.querySelectorAll('.project-card, .exp-card').forEach(card => {
 });
 
 // ============================================
-// FLOATING PARTICLES IN HERO
+// FLOATING PARTICLES THROUGHOUT PAGE
 // ============================================
 function createParticles() {
     const particleContainer = document.createElement('div');
     particleContainer.className = 'particles';
-    hero.appendChild(particleContainer);
+    document.body.appendChild(particleContainer);
 
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 30; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
         particle.style.left = Math.random() * 100 + '%';
         particle.style.animationDelay = Math.random() * 5 + 's';
-        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
         particleContainer.appendChild(particle);
     }
 }
