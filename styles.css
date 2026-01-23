@@ -1095,7 +1095,8 @@ section {
         top: 60px;
         left: 0;
         right: 0;
-        background: var(--bg);
+        background: var(--bg-card);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         padding: 20px 24px;
@@ -1128,8 +1129,16 @@ section {
         font-size: 2.25rem;
     }
 
+    .hero-title {
+        font-size: 1rem;
+    }
+
     section {
         padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
     }
 
     .projects-grid {
@@ -1140,12 +1149,21 @@ section {
         grid-column: span 1;
     }
 
+    .project-card {
+        padding: 20px;
+    }
+
     .skills-categories {
         justify-content: center;
     }
 
+    .skill-category {
+        padding: 12px 18px;
+    }
+
     .exp-header {
         flex-wrap: wrap;
+        padding: 16px;
     }
 
     .exp-date {
@@ -1154,5 +1172,32 @@ section {
         margin-top: 8px;
         background: none;
         padding: 0;
+    }
+
+    .exp-details ul {
+        padding: 0 16px 16px 32px;
+    }
+
+    .contact-btn {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+
+    /* Hide cursor glow on mobile */
+    .cursor-glow {
+        display: none;
+    }
+
+    /* Reduce particle count effect on mobile */
+    .particle:nth-child(n+15) {
+        display: none;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 16px;
     }
 }
