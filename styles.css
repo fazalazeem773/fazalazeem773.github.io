@@ -633,6 +633,11 @@ section {
     text-decoration: underline;
 }
 
+/* Separate adjacent project links so they don't read as one string */
+.project-link + .project-link {
+    margin-left: 20px;
+}
+
 /* Skills */
 .skills {
     background: transparent;
@@ -1213,5 +1218,64 @@ section {
 
     .container {
         padding: 0 16px;
+    }
+}
+
+/* ==========================================
+   TABLET BREAKPOINT
+   Fills the gap between the mobile layout (<=640px)
+   and the 720px desktop container.
+   ========================================== */
+@media (min-width: 641px) and (max-width: 900px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    .projects-grid {
+        gap: 16px;
+    }
+
+    .project-card {
+        padding: 22px;
+    }
+}
+
+/* ==========================================
+   KEYBOARD FOCUS
+   Visible focus ring for keyboard users only,
+   so mouse clicks stay visually clean.
+   ========================================== */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   REDUCED MOTION
+   Respects the OS "reduce motion" setting by
+   removing transitions, scroll animation and
+   the reveal transforms.
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal,
+    [class*="reveal"] {
+        opacity: 1 !important;
+        transform: none !important;
     }
 }
