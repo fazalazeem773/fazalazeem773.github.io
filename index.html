@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazal E Azeem</title>
+    <title>Fazal E Azeem — Front-End Developer</title>
+    <meta name="description" content="Front-end developer and final-year Computer Science student in Newcastle, Australia. I build responsive, accessible interfaces in React and TypeScript.">
+    <link rel="canonical" href="https://fazalazeem773.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fazalazeem773.github.io/">
+    <meta property="og:title" content="Fazal E Azeem — Front-End Developer">
+    <meta property="og:description" content="Front-end developer and final-year Computer Science student in Newcastle, Australia. I build responsive, accessible interfaces in React and TypeScript.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Ctext x='16' y='22' font-family='Inter,Helvetica,Arial,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EFA%3C/text%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +46,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1 class="hero-name">Fazal E Azeem</h1>
-            <p class="hero-title">Cyber Security Student & Developer</p>
+            <p class="hero-title">Front-End Developer &amp; Cyber Security Student</p>
             <div class="hero-links">
                 <a href="mailto:Fazalazeem773@gmail.com" class="hero-link" aria-label="Email">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -58,8 +69,9 @@
         <div class="container">
             <h2 class="section-title">About</h2>
             <p class="about-intro">
-                Final year Cyber Security student at the University of Newcastle.
-                Building secure web applications and learning to break them.
+                Final year Computer Science student at the University of Newcastle.
+                I build responsive, accessible web interfaces in React and TypeScript,
+                with a security background that shapes how I build them.
             </p>
             <button class="expand-btn" data-target="about-details">
                 <span>More about me</span>
@@ -68,9 +80,10 @@
             <div id="about-details" class="expandable-content">
                 <div class="about-expanded">
                     <p>
-                        Completed a 1-year internship at Cloud Grow, developing IoT web applications,
-                        conducting market research, and presenting to stakeholders. I enjoy the intersection
-                        of development and security.
+                        Completed a year-long industry placement at Cloud Grow, where I designed and built
+                        a progressive web app for IoT irrigation control, prototyped the interface in Figma,
+                        and presented to stakeholders. Majoring in Cyber Security, which gives me a useful
+                        instinct for how front ends fail.
                     </p>
                     <div class="about-badges">
                         <span class="badge">Newcastle, NSW</span>
@@ -154,23 +167,6 @@
 
                 <div class="project-card featured" data-expandable>
                     <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
-                    </div>
-                    <h3>Tasawar Video Platform</h3>
-                    <div class="project-details">
-                        <p>Full-stack video sharing platform with React frontend, Node.js/Express backend, and MongoDB. Features user auth, video upload/streaming, channels, comments, playlists, and admin dashboard.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Redux</span>
-                        </div>
-                        <a href="https://github.com/fazalazeem773/Tasawar-Video-Platform" target="_blank" class="project-link">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card featured" data-expandable>
-                    <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
                     </div>
                     <h3>MovieMatch</h3>
@@ -183,68 +179,28 @@
                             <span>OpenAI</span>
                             <span>Pinecone</span>
                         </div>
-                        <a href="https://www.moviematch.site/" target="_blank" class="project-link">Visit Website</a>
+                        <a href="https://www.moviematch.site/" target="_blank" rel="noopener" class="project-link">Visit Website</a>
+                        <a href="https://github.com/fazalazeem773/moviematch" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
-                <div class="project-card" data-expandable>
+                <div class="project-card featured" data-expandable>
                     <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
                     </div>
-                    <h3>Secure Login Systems</h3>
+                    <h3>Tasawar Video Platform</h3>
                     <div class="project-details">
-                        <p>Built authentication systems with issue tracking via GitHub/JIRA. Created structured documentation for requirements and testing workflows.</p>
+                        <p>Full-stack video sharing platform with React frontend, Node.js/Express backend, and MongoDB. Features user auth, video upload/streaming, channels, comments, playlists, and admin dashboard.</p>
                         <div class="project-tags">
-                            <span>GitHub</span>
-                            <span>JIRA</span>
-                            <span>Security</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Redux</span>
                         </div>
+                        <a href="https://github.com/fazalazeem773/Tasawar-Video-Platform" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
-                <div class="project-card" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
-                    </div>
-                    <h3>Database Design</h3>
-                    <div class="project-details">
-                        <p>Designed normalized schemas and ER diagrams in Azure SQL & MS SQL. Wrote optimized queries for reporting and compliance.</p>
-                        <div class="project-tags">
-                            <span>Azure SQL</span>
-                            <span>MS SQL</span>
-                            <span>ER Diagrams</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                    </div>
-                    <h3>Web Interfaces</h3>
-                    <div class="project-details">
-                        <p>Created responsive, accessible front-end interfaces with focus on usability and modern web standards.</p>
-                        <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>TypeScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                    </div>
-                    <h3>Security Analysis</h3>
-                    <div class="project-details">
-                        <p>Analysed vulnerabilities, simulated SQL injection/DoS attacks, documented mitigation strategies.</p>
-                        <div class="project-tags">
-                            <span>Pen Testing</span>
-                            <span>SQL Injection</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
