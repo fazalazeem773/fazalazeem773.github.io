@@ -37,7 +37,8 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e)
 // TYPING ANIMATION FOR HERO
 // ============================================
 const heroTitle = document.querySelector('.hero-title');
-const roles = ['Cyber Security Student', 'App Developer', 'Problem Solver', 'Security Enthusiast'];
+const roles = ['Front-End Developer', 'React & TypeScript Developer', 'Cyber Security Student', 'Problem Solver'];
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -68,8 +69,12 @@ function typeRole() {
     setTimeout(typeRole, typingSpeed);
 }
 
-// Start typing animation
-setTimeout(typeRole, 1000);
+// Start typing animation, unless the visitor prefers reduced motion
+if (prefersReducedMotion) {
+    heroTitle.textContent = roles[0];
+} else {
+    setTimeout(typeRole, 1000);
+}
 
 // ============================================
 // MOBILE NAVIGATION
@@ -99,7 +104,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) {
             const offset = 70;
             const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
+            window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
         }
     });
 });
@@ -120,10 +125,14 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-revealElements.forEach(el => {
-    el.classList.add('reveal-element');
-    revealObserver.observe(el);
-});
+if (prefersReducedMotion) {
+    revealElements.forEach(el => el.classList.add('revealed'));
+} else {
+    revealElements.forEach(el => {
+        el.classList.add('reveal-element');
+        revealObserver.observe(el);
+    });
+}
 
 // ============================================
 // PROGRESSIVE DISCLOSURE - Expand Buttons
