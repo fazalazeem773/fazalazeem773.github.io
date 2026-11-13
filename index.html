@@ -4,332 +4,362 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazal E Azeem | Cyber Security Graduate</title>
-    <meta name="description" content="Final-year Computer Science student majoring in Cyber Security at the University of Newcastle, Australia. Security fundamentals, network and system security, governance and risk, and hands-on lab and development experience.">
+    <meta name="description" content="Final-year Computer Science student majoring in Cyber Security at the University of Newcastle, graduating December 2026. Network and system security, governance, risk and compliance, and hands-on lab and full-stack development experience.">
     <link rel="canonical" href="https://fazalazeem773.github.io/">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fazalazeem773.github.io/">
     <meta property="og:title" content="Fazal E Azeem | Cyber Security Graduate">
-    <meta property="og:description" content="Final-year Computer Science student majoring in Cyber Security at the University of Newcastle, Australia. Security fundamentals, network and system security, governance and risk, and hands-on lab and development experience.">
+    <meta property="og:description" content="Final-year Computer Science student majoring in Cyber Security at the University of Newcastle, graduating December 2026.">
     <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#0e4f4c">
 
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Ctext x='16' y='22' font-family='Inter,Helvetica,Arial,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'%3EFA%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e4f4c'/%3E%3Ctext x='16' y='22' font-family='Helvetica,Arial,sans-serif' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EFA%3C/text%3E%3C/svg%3E">
 
-    <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <button class="theme-toggle" aria-label="Toggle dark mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Hero: Minimal, focused -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-name">Fazal E Azeem</h1>
-            <p class="hero-title">Cyber Security Graduate &amp; Software Developer</p>
-            <div class="hero-links">
-                <a href="mailto:Fazalazeem773@gmail.com" class="hero-link" aria-label="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
-                <a href="https://linkedin.com/in/fazal-e-azeem-145b68255" target="_blank" class="hero-link" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a href="https://github.com/fazalazeem773" target="_blank" class="hero-link" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top">Fazal E Azeem</a>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark theme">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                </button>
+                <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+                </button>
             </div>
-            <a href="#about" class="scroll-hint" aria-label="Scroll down">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </a>
         </div>
-    </section>
+    </header>
 
-    <!-- About: Brief intro with expandable details -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <p class="about-intro">
-                Final year Computer Science student at the University of Newcastle,
-                majoring in Cyber Security. My coursework covers data security, system and
-                network security, security attacks, and governance, risk and compliance,
-                and I build and deploy software end to end, which shapes how I look at
-                where systems fail.
-            </p>
-            <button class="expand-btn" data-target="about-details">
-                <span>More about me</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div id="about-details" class="expandable-content">
-                <div class="about-expanded">
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <h1>Fazal E Azeem</h1>
+                    <p class="hero-role">Cyber security graduate, University of Newcastle</p>
+                    <p class="hero-lede">
+                        I study how systems get attacked, and I build and deploy my own
+                        so I know where they break.
+                    </p>
+                    <p class="availability">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Graduating December 2026. Available full time from early 2027.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="mailto:Fazalazeem773@gmail.com">Email me</a>
+                        <a class="btn" href="https://linkedin.com/in/fazal-e-azeem-145b68255" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn" href="https://github.com/fazalazeem773" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+
+                <figure class="stack-figure">
+                    <figcaption>Where I have worked in the stack</figcaption>
+                    <ol class="stack">
+                        <li>
+                            <span class="layer">Policy</span>
+                            <span class="evidence">Governance model and information security policy for a healthcare clinic case study</span>
+                        </li>
+                        <li>
+                            <span class="layer">Application</span>
+                            <span class="evidence">Authentication, route guards and REST APIs in Node.js and Express</span>
+                        </li>
+                        <li>
+                            <span class="layer">Transport</span>
+                            <span class="evidence">TCP and UDP socket programming, secure protocols and key exchange</span>
+                        </li>
+                        <li>
+                            <span class="layer">Network</span>
+                            <span class="evidence">IP, routing and common network-layer weaknesses</span>
+                        </li>
+                        <li>
+                            <span class="layer">Link</span>
+                            <span class="evidence">LAN technologies, from the physical layer up</span>
+                        </li>
+                        <li>
+                            <span class="layer">Host</span>
+                            <span class="evidence">Linux and Windows virtual machines in Azure for ethical hacking practice</span>
+                        </li>
+                    </ol>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="wrap section-grid">
+                <h2>About</h2>
+                <div class="section-body prose">
                     <p>
-                        Grounded in the CIA triad, TCP/IP networking and operating system fundamentals.
-                        I run virtual machine environments in Microsoft Azure across different operating
-                        systems for ethical hacking and vulnerability analysis practice, and I have written
-                        a governance model and information security policy for a healthcare clinic case study
-                        covering asset management and system access.
+                        I am a final-year Computer Science student majoring in Cyber Security at the
+                        University of Newcastle. My coursework covers data security, system and network
+                        security, security attacks, and cyber governance, risk and compliance, grounded
+                        in the CIA triad, TCP/IP networking and operating system fundamentals.
                     </p>
                     <p>
-                        On the build side, I completed a year-long industry placement at Cloud Grow, where I
-                        designed a progressive web app for IoT irrigation control, prototyped in Figma and
-                        presented to stakeholders. Three years in a high-volume customer-facing role alongside
-                        full-time study taught me to explain a technical problem to someone who does not
-                        share the jargon.
+                        Outside lectures I run virtualised lab environments for ethical hacking and
+                        vulnerability analysis, and I build full-stack applications with authentication,
+                        access control and containerised infrastructure. Three years in a high-volume
+                        customer-facing role alongside full-time study taught me to explain a technical
+                        problem clearly to someone who does not share the jargon.
                     </p>
-                    <div class="about-badges">
-                        <span class="badge">Newcastle, NSW</span>
-                        <span class="badge">Cyber Security Major</span>
-                        <span class="badge">Graduating December 2026</span>
-                        <span class="badge">ACS Member</span>
-                    </div>
+                    <ul class="facts">
+                        <li>International Excellence Scholarship recipient</li>
+                        <li>ACS member</li>
+                        <li>Based in Newcastle, NSW</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience: Collapsed cards, click to expand -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-list">
-
-                <div class="exp-card" data-expandable>
-                    <div class="exp-header">
-                        <div class="exp-main">
-                            <h3>IT Intern</h3>
-                            <span class="exp-company">Cloud Grow</span>
-                        </div>
-                        <span class="exp-date">2025 (1 year)</span>
-                        <svg class="exp-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </div>
-                    <div class="exp-details">
-                        <ul>
-                            <li>Developed responsive web application for IoT irrigation device control</li>
-                            <li>Troubleshot integration and compatibility issues between the application and deployed sensor hardware</li>
-                            <li>Conducted competitor and market research for product strategy</li>
-                            <li>Prototyped interfaces in Figma, presented progress to stakeholders</li>
-                            <li>Managed deliverables under deadlines with rapid upskilling</li>
+        <section class="section" id="projects">
+            <div class="wrap section-grid">
+                <h2>Projects</h2>
+                <div class="section-body">
+                    <article class="project">
+                        <h3>Tasawar Video Platform</h3>
+                        <p class="project-sub">Ad-free video sharing service</p>
+                        <ul class="bullets">
+                            <li>Implemented user authentication and route guards separating public, private and administrator areas, with channel and video data models behind a Node.js and Express API.</li>
+                            <li>Containerised and served the application with Docker and nginx, defining the build and reverse-proxy configuration used for deployment.</li>
+                            <li>Built a custom HTML5 video player from first principles, covering playback, seeking, volume, speed and full-screen control.</li>
+                            <li>Architected client state with Redux Toolkit slices across a 16-page single-page application.</li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="exp-card" data-expandable>
-                    <div class="exp-header">
-                        <div class="exp-main">
-                            <h3>Customer Service Representative</h3>
-                            <span class="exp-company">Reddy Express</span>
-                        </div>
-                        <span class="exp-date">2023 - Present</span>
-                        <svg class="exp-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </div>
-                    <div class="exp-details">
-                        <ul>
-                            <li>Handled transactions, cash and customer data under store compliance and handling procedures for sensitive information</li>
-                            <li>Maintained accurate sales and inventory reports using digital POS tools</li>
-                            <li>Identified and resolved stock discrepancies with suppliers</li>
-                            <li>Resolved customer enquiries professionally in fast-paced environment</li>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>Node.js</li><li>Express</li><li>MongoDB</li><li>React 18</li><li>Redux Toolkit</li><li>Docker</li><li>nginx</li>
                         </ul>
-                    </div>
-                </div>
+                        <p class="project-links">
+                            <a href="https://github.com/fazalazeem773/Tasawar-Video-Platform" target="_blank" rel="noopener">Source on GitHub</a>
+                        </p>
+                    </article>
 
-                <div class="exp-card" data-expandable>
-                    <div class="exp-header">
-                        <div class="exp-main">
-                            <h3>IT Director</h3>
-                            <span class="exp-company">College MUN</span>
-                        </div>
-                        <span class="exp-date">2020</span>
-                        <svg class="exp-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </div>
-                    <div class="exp-details">
-                        <ul>
-                            <li>Managed digital infrastructure for 100+ participants</li>
-                            <li>Maintained registration databases and prepared reports</li>
-                            <li>Translated technical processes for non-technical users</li>
+                    <article class="project">
+                        <h3>MovieMatch</h3>
+                        <p class="project-sub">Semantic movie search engine</p>
+                        <ul class="bullets">
+                            <li>Designed and built an Express API that embeds natural-language queries with OpenAI and retrieves candidates from a Pinecone vector index, keeping all provider credentials server side.</li>
+                            <li>Ranked results with a weighted scoring function blending semantic similarity, rating and popularity, tuned against sample queries.</li>
+                            <li>Deployed the full stack on Vercel and own the ongoing behaviour and monitoring of the running application.</li>
                         </ul>
+                        <ul class="tags" aria-label="Technologies">
+                            <li>React 19</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>OpenAI</li><li>Pinecone</li><li>Vercel</li>
+                        </ul>
+                        <p class="project-links">
+                            <a href="https://www.moviematch.site/" target="_blank" rel="noopener">Live site</a>
+                            <a href="https://github.com/fazalazeem773/moviematch" target="_blank" rel="noopener">Source on GitHub</a>
+                        </p>
+                    </article>
+
+                    <div class="project-pair">
+                        <article class="project project-small">
+                            <h3>Security labs</h3>
+                            <p>
+                                Virtual machine environments built and administered in Microsoft Azure
+                                across multiple operating systems, used for ethical hacking practice,
+                                vulnerability analysis and security testing against systems I control.
+                            </p>
+                            <ul class="tags" aria-label="Topics">
+                                <li>Azure</li><li>Linux</li><li>Windows</li><li>Vulnerability analysis</li>
+                            </ul>
+                        </article>
+
+                        <article class="project project-small">
+                            <h3>Governance case study</h3>
+                            <p>
+                                A centralised governance model and an information security policy
+                                covering asset management and system access, written for a healthcare
+                                clinic case study in Cyber Governance, Risk and Compliance.
+                            </p>
+                            <ul class="tags" aria-label="Topics">
+                                <li>Governance</li><li>Risk and compliance</li><li>Security policy</li><li>Access control</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects: Icons only, hover/click for details -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
+        <section class="section" id="experience">
+            <div class="wrap section-grid">
+                <h2>Experience</h2>
+                <div class="section-body">
+                    <article class="role">
+                        <header class="role-head">
+                            <h3>IT Intern, Cloud Grow</h3>
+                            <p class="role-date">2025</p>
+                        </header>
+                        <p class="role-note">Industry placement completed as part of Work Integrated Learning (COMP3851A/B).</p>
+                        <ul class="bullets">
+                            <li>Designed and built a Progressive Web App that lets clients remotely monitor, manage and operate their deployed IoT sensors from any device.</li>
+                            <li>Troubleshot integration and compatibility issues between the application and the deployed sensor hardware, working through them with the technical team.</li>
+                            <li>Worked directly with stakeholders to turn a loosely defined brief into concrete requirements and workflows, prototyping in Figma before implementation to reduce rework.</li>
+                            <li>Conducted competitor analysis across rival sensor products to identify feature gaps, informing product direction.</li>
+                        </ul>
+                    </article>
 
-                <div class="project-card featured" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <article class="role">
+                        <header class="role-head">
+                            <h3>Customer Service Representative, Reddy Express</h3>
+                            <p class="role-date">2023 to present</p>
+                        </header>
+                        <p class="role-note">Reddy Express (Viva Energy), Wallsend West. Held throughout full-time study.</p>
+                        <ul class="bullets">
+                            <li>Handle transactions, cash and customer data in a high-volume store, following compliance and handling procedures for sensitive information.</li>
+                            <li>Explain problems and resolutions clearly to customers from a wide range of backgrounds, including under time pressure.</li>
+                            <li>Coordinate handovers with team members across shifts to keep service and open issues continuous.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="wrap section-grid">
+                <h2>Education</h2>
+                <div class="section-body">
+                    <div class="role-head">
+                        <h3>Bachelor of Computer Science, Cyber Security major</h3>
+                        <p class="role-date">2023 to 2026</p>
                     </div>
-                    <h3>Security Labs</h3>
-                    <div class="project-details">
-                        <p>Virtual machine environments built and administered in Microsoft Azure across multiple operating systems, used for ethical hacking practice, vulnerability analysis and testing attack techniques against systems I control.</p>
-                        <div class="project-tags">
-                            <span>Azure</span>
-                            <span>Linux</span>
-                            <span>Windows</span>
-                            <span>Ethical Hacking</span>
-                            <span>Vulnerability Analysis</span>
+                    <p class="role-note">University of Newcastle, Australia. Graduating December 2026.</p>
+
+                    <table class="courses">
+                        <caption>Relevant coursework</caption>
+                        <thead>
+                            <tr><th scope="col">Code</th><th scope="col">Course</th><th scope="col">What it covered</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>COMP3260</td>
+                                <th scope="row">Data Security</th>
+                                <td>Confidentiality, integrity and availability, cryptographic mechanisms, access control and security models.</td>
+                            </tr>
+                            <tr>
+                                <td>SENG2250</td>
+                                <th scope="row">System and Network Security</th>
+                                <td>Securing networked systems, authentication and key exchange, secure protocols and network-layer weaknesses.</td>
+                            </tr>
+                            <tr>
+                                <td>COMP3500</td>
+                                <th scope="row">Security Attacks</th>
+                                <td>Attack techniques and threat behaviour, with the countermeasures and detection approaches used against them.</td>
+                            </tr>
+                            <tr>
+                                <td>COMP3600</td>
+                                <th scope="row">Cyber Governance, Risk and Compliance <span class="pill">In progress</span></th>
+                                <td>Governance models, risk and compliance frameworks and information security policy.</td>
+                            </tr>
+                            <tr>
+                                <td>SENG4500</td>
+                                <th scope="row">Network and Distributed Computing <span class="pill">In progress</span></th>
+                                <td>Network layering and protocols, routing, TCP and UDP, socket programming and distributed security.</td>
+                            </tr>
+                            <tr>
+                                <td>INFT2031</td>
+                                <th scope="row">Systems and Network Administration</th>
+                                <td>Administration of operating systems, user and access management, and network services.</td>
+                            </tr>
+                            <tr>
+                                <td>COMP2240</td>
+                                <th scope="row">Operating Systems</th>
+                                <td>Processes and threads, scheduling, concurrency, memory management and file systems.</td>
+                            </tr>
+                            <tr>
+                                <td>COMP1140</td>
+                                <th scope="row">Database and Information Management</th>
+                                <td>Relational design, entity-relationship modelling, normalisation and SQL.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="wrap section-grid">
+                <h2>Skills</h2>
+                <div class="section-body">
+                    <dl class="skills">
+                        <div>
+                            <dt>Security</dt>
+                            <dd>CIA triad and core security principles, network and system security, vulnerability analysis, penetration testing, attack techniques and countermeasures, governance, risk and compliance, information security policy</dd>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                    </div>
-                    <h3>Governance Case Study</h3>
-                    <div class="project-details">
-                        <p>A centralised governance model and information security policy written for a small healthcare clinic case study, covering asset management and system access controls, delivered as part of Cyber Governance, Risk and Compliance.</p>
-                        <div class="project-tags">
-                            <span>Governance</span>
-                            <span>Risk &amp; Compliance</span>
-                            <span>InfoSec Policy</span>
-                            <span>Access Control</span>
+                        <div>
+                            <dt>Networking and systems</dt>
+                            <dd>TCP/IP, UDP, routing, LAN technologies, socket programming, Linux and Windows virtual machines, Microsoft Azure, systems and network administration</dd>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card featured" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
-                    </div>
-                    <h3>Tasawar Video Platform</h3>
-                    <div class="project-details">
-                        <p>Full-stack video platform with authentication and route guards separating public, private and administrator areas. Node.js/Express and MongoDB behind a React front end, containerised with Docker and served through an nginx reverse proxy.</p>
-                        <div class="project-tags">
-                            <span>Authentication</span>
-                            <span>Access Control</span>
-                            <span>Docker</span>
-                            <span>nginx</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
+                        <div>
+                            <dt>Languages</dt>
+                            <dd>Java, Python, TypeScript, JavaScript, SQL, PHP, HTML and CSS</dd>
                         </div>
-                        <a href="https://github.com/fazalazeem773/Tasawar-Video-Platform" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-                    </div>
-                </div>
-
-                <div class="project-card featured" data-expandable>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
-                    </div>
-                    <h3>MovieMatch</h3>
-                    <div class="project-details">
-                        <p>Semantic movie search built on OpenAI embeddings and a Pinecone vector index, with all provider credentials held server side rather than exposed to the browser. Deployed and maintained on Vercel.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Node.js</span>
-                            <span>OpenAI</span>
-                            <span>Pinecone</span>
+                        <div>
+                            <dt>Infrastructure and tooling</dt>
+                            <dd>Docker, nginx, Git and GitHub, Jira, Vercel, Vite, Agile delivery</dd>
                         </div>
-                        <a href="https://www.moviematch.site/" target="_blank" rel="noopener" class="project-link">Visit Website</a>
-                        <a href="https://github.com/fazalazeem773/moviematch" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills: Categories only, click to reveal skills -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-categories">
-
-                <button class="skill-category" data-skills="CIA Triad,Network Security,System Security,Vulnerability Analysis,Penetration Testing,Attack Techniques &amp; Countermeasures,Governance Risk &amp; Compliance,Information Security Policy">
-                    <span class="skill-cat-name">Security</span>
-                    <span class="skill-count">8</span>
-                </button>
-
-                <button class="skill-category" data-skills="TCP/IP,UDP,Routing,LAN Technologies,Socket Programming,Linux,Windows,Operating Systems">
-                    <span class="skill-cat-name">Networking &amp; Systems</span>
-                    <span class="skill-count">8</span>
-                </button>
-
-                <button class="skill-category" data-skills="JavaScript,TypeScript,Python,Java,SQL">
-                    <span class="skill-cat-name">Languages</span>
-                    <span class="skill-count">5</span>
-                </button>
-
-                <button class="skill-category" data-skills="React,Node.js,Express,Redux,HTML5,CSS3,Tailwind">
-                    <span class="skill-cat-name">Web</span>
-                    <span class="skill-count">7</span>
-                </button>
-
-                <button class="skill-category" data-skills="MongoDB,Azure SQL,MS SQL Server">
-                    <span class="skill-cat-name">Databases</span>
-                    <span class="skill-count">3</span>
-                </button>
-
-                <button class="skill-category" data-skills="Azure,Docker,nginx,Git,GitHub,JIRA,Figma,Confluence,qTest">
-                    <span class="skill-cat-name">Tools</span>
-                    <span class="skill-count">9</span>
-                </button>
-            </div>
-            <div id="skills-display" class="skills-display"></div>
-        </div>
-    </section>
-
-    <!-- Contact: Essential only -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p class="contact-intro">Open to graduate opportunities in cyber security, available from December 2026.</p>
-            <div class="contact-primary">
-                <a href="mailto:Fazalazeem773@gmail.com" class="contact-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <span>Fazalazeem773@gmail.com</span>
-                </a>
-            </div>
-            <button class="expand-btn" data-target="contact-more">
-                <span>More ways to connect</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-            </button>
-            <div id="contact-more" class="expandable-content">
-                <div class="contact-expanded">
-                    <a href="tel:0424137498" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        <span>0424 137 498</span>
-                    </a>
-                    <a href="https://linkedin.com/in/fazal-e-azeem-145b68255" target="_blank" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/fazalazeem773" target="_blank" class="contact-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        <span>GitHub</span>
-                    </a>
-                    <p class="contact-location">Birmingham Gardens, NSW, Australia</p>
+                        <div>
+                            <dt>Development and data</dt>
+                            <dd>Node.js, Express, REST API design, React, MongoDB, relational databases, OpenAI embeddings, Pinecone vector search</dd>
+                        </div>
+                        <div>
+                            <dt>Professional</dt>
+                            <dd>Incident and issue troubleshooting, stakeholder communication, technical documentation, requirements elicitation, handling confidential information</dd>
+                        </div>
+                    </dl>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Fazal E Azeem</p>
+        <section class="section contact" id="contact">
+            <div class="wrap section-grid">
+                <h2>Contact</h2>
+                <div class="section-body">
+                    <p class="contact-lede">
+                        I am looking for graduate and entry-level cyber security roles starting early 2027.
+                        Email is the quickest way to reach me.
+                    </p>
+                    <ul class="contact-list">
+                        <li><span>Email</span><a href="mailto:Fazalazeem773@gmail.com">Fazalazeem773@gmail.com</a></li>
+                        <li><span>Phone</span><a href="tel:+61424137498">+61 424 137 498</a></li>
+                        <li><span>LinkedIn</span><a href="https://linkedin.com/in/fazal-e-azeem-145b68255" target="_blank" rel="noopener">linkedin.com/in/fazal-e-azeem-145b68255</a></li>
+                        <li><span>GitHub</span><a href="https://github.com/fazalazeem773" target="_blank" rel="noopener">github.com/fazalazeem773</a></li>
+                        <li><span>Location</span>Birmingham Gardens, NSW, Australia</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Fazal E Azeem</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
